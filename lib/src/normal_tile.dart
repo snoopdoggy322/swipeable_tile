@@ -52,7 +52,7 @@ class NormalTile extends StatelessWidget {
                       .value,
                 );
                 return Container(
-                  clipBehavior: Clip.hardEdge,
+                  clipBehavior: Clip.none,
                   decoration: BoxDecoration(
                       color: color,
                       borderRadius: BorderRadius.horizontal(
