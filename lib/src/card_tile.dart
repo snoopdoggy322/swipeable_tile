@@ -35,7 +35,7 @@ class CardTile extends StatelessWidget {
           if (!moveAnimation.isDismissed)
             Positioned.fill(
               child: Container(
-                  clipBehavior: Clip.hardEdge,
+                  clipBehavior: Clip.none,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(borderRadius),
                   ),
@@ -45,7 +45,7 @@ class CardTile extends StatelessWidget {
           SlideTransition(
             position: moveAnimation,
             child: Container(
-              clipBehavior: Clip.hardEdge,
+              clipBehavior: Clip.none,
               decoration: BoxDecoration(
                 color: color,
                 borderRadius: BorderRadius.circular(borderRadius),
